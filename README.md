@@ -211,3 +211,92 @@ If you would like to confirm that this worked properly you may open Regedit and 
 
 </details>
 
+<h1> Tenable Unauthenticated Scan Configuration</h1>
+
+
+<strong > Step 1: Login To Tenable & Navigate to the Scans Page </Strong>
+
+<img src="https://i.imgur.com/v62YA9i.png">
+<img src="https://i.imgur.com/rB5FvQ4.png">
+
+<strong > Step 2: Select Create Scan & Use the Basic Network Scan Template </Strong>
+
+<img src="https://i.imgur.com/M9voM52.png">
+<img src="https://i.imgur.com/GOpxxgq.png">
+
+
+<strong > Step 3: Configure The Basic Tab</Strong>
+
+<ul> <strong> Enter a name for you scan to identify later  </strong>  </ul>
+
+<ul> <strong> Select your Scanner Type </strong> In my case I will be using the Internal Scanner Provided by my organization, this scanner is on the same virtual network as the Host I am scanning which means I will be providing the Private IP instead of the Public IP. If your organization only uses the Tenable Cloud Scanner you will use the Public IP of your target. Additionally at this point you will also select your scan engine which in my case will be unique to my organization. </strong>  </ul>
+
+
+<img src="https://i.imgur.com/ERnRMKS.png">
+
+<strong > Step 4: Discovery Tab </Strong>
+
+<ul> <strong> Select the Discovery tab on the left side under settings and click the Scan Type drop down and select Custom  </strong>  </ul>
+
+<img src="https://i.imgur.com/KMXreIJ.png">
+
+<ul> <strong> Under Host Discovery click the "Use Fast Network Discovery" toggle and note its function </strong> </ul>
+
+<img src="https://i.imgur.com/6mfX0TL.png">
+
+<strong > Step 5: Save & Launch </Strong>
+
+
+<img src="https://i.imgur.com/ERnRMKS.png">
+
+<strong > Step 6: Completed Scan: Vulnerabilities and Reports </Strong>
+
+<ul> <strong> Once the unauthenticated scan has completed we will right click its entry and take note  of the vulnerabilities found, (the second picture provided below is of a different scan) </strong>  </ul>
+
+<img src="https://i.imgur.com/NVJGJg1.png">
+<img src="https://i.imgur.com/4sfDFhg.png">
+
+<ul> <strong> Under the Actions column right click the completed entry and select Export and PDF- Executive Summary </strong> </ul>
+
+<img src="https://i.imgur.com/38OnwtT.png">
+<img src="https://i.imgur.com/9qX5ZrV.png">
+<img src="https://i.imgur.com/ZI7OMBh.png">
+
+<strong > Step 7: Results </Strong>
+
+<ul> <strong> As we can see by the results of the Unauthenticated Scans, we did not get many results, this is the most that the scan could provide back in an environment that it cannot gain full access to </strong>  </ul>
+
+
+<h1> Authenticated Scan </h1>
+
+
+
+<strong > Step 1: Navigate to the Scans Page and click Edit under the Actions Menu </Strong>
+
+<img src="https://i.imgur.com/2nDP6BO.png">
+
+
+<strong > Step 2: Navigate to the Credentials section and click the Add Credentials Button </Strong>
+
+<img src="https://i.imgur.com/oN44NTx.png">
+<img src="https://i.imgur.com/VIILC2b.png">
+
+
+<strong > Step 3: Within the Credential Type Panel, Select Host > Windows</Strong>
+
+<img src="https://i.imgur.com/KnZtl7R.png">
+
+<strong > Step 4: Add the login Credentials of the target host machine in this case, the VM we have been working with </Strong>
+<strong > Step 5: Before Saving enable the bottom three toggles under Scan-wide Credential Type Settings </Strong>
+
+<img src="https://i.imgur.com/DMgwzht.png">
+
+<strong > Step 6: Save & Launch the scan. Note this scan may take much longer so be prepared to wait  </Strong>
+
+<img src="https://i.imgur.com/cql0tUv.png">
+
+<strong > Step 7: Results: mirror the process of exporting the completed results as we did in the Unauthenticated Scan and examine your results </Strong>
+
+<img src="https://i.imgur.com/gD6uwry.png">
+
+<strong > As we can see the contents of the Authenticated Scan are far more plentiful than our Unauthenticated scan showing several more vulnerabilities that have been found on the target device. The next steps at this point would be to consult your organizations guidelines and remediate whats acceptable for your organization. Remember your organization may accept differing levels of risk from other organizations and its important to keep in mind that the most secure infastructure is also some of the hardest to use in full functionality so be sure to consult your team and guidelines before remediating. </Strong>
