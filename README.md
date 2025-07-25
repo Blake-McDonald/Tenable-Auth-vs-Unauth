@@ -176,7 +176,7 @@ Then ensure your Subnet and Public IP are created. This will allow us to communi
 <img src="https://i.imgur.com/yupyhuC.png">
 <img src="https://i.imgur.com/W7p6xNE.png">
   <br>
-<strong > Step 8: Powershell:</strong> 
+<strong > Step 9: Powershell:</strong> 
   <br>
 
 <ul> <strong> after disabling the windows Firewall and before running the scan, you may have to run the below PowerShell command AS AN ADMIN on your VM in order to enable remote administrative access by modifying the LocalAccountTokenFilterPolicy registry key </strong>  </ul>
@@ -190,7 +190,7 @@ If you would like to confirm that this worked properly you may open Regedit and 
 
 
   <br>
-<strong > Step 8: NSG Rules :</strong> 
+<strong > Step 10: NSG Rules :</strong> 
 
   <br>
 <ul> <strong> Naviagate back to the Azure Portal in the VM Overview and go to the Network Settings tab on the left and scroll until you see the NSG Rule List  </strong>  </ul>
